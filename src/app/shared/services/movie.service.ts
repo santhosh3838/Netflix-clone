@@ -4,10 +4,10 @@ import { inject, Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-
+  
 export class MovieService {
 http=inject(HttpClient)
-
+ 
 private options={
   params:{
     include_adult:'false',
