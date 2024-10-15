@@ -1,0 +1,22 @@
+<header class=" h-[68px] z-10 bg-gray-900 sticky top-0 flex items-center justify-between px-10">
+    <div class="flex gap-5">
+        <img width="110"
+            src="https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png"
+            alt="logo">
+        <ul class="flex items-center" *ngFor="let item of navList">
+            <li
+                class=" text-neutral-200  cursor-pointer text-balance font-extralight hover:text-red-500 transition-[1s] text-center">
+                {{item}}</li>
+        </ul>
+    </div>
+    <!-- welcome user |profie|signout -->
+
+    <div class="text-white flex items-center gap-4  ">
+        <div class="flex items-center gap-3">
+            <a href="/" ><span>Welcome <strong>{{name}}</strong></span></a>
+            <img [src]="usrImg" alt="profile" width="30">
+        </div>
+        &nbsp; |&nbsp;
+        <a href="/" class="text-red-800 font-black" >Signout</a>
+    </div>
+</header>
