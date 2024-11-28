@@ -20,6 +20,7 @@
             "outputPath": "dist/netflix-sant",
             "index": "src/index.html",
             "browser": "src/main.ts",
+           
             "polyfills": [
               "zone.js"
             ],
@@ -30,6 +31,7 @@
                 "glob": "**/*",
                 "input": "public"
               }
+              
             ],
             "styles": [
               "src/styles.scss"
@@ -62,6 +64,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "buildTarget": "netflix-sant:build:production"

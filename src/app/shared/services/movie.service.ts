@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
-
+import { inject, Injectable} from '@angular/core';
+ 
 @Injectable({
   providedIn: 'root'
 })
@@ -18,7 +18,9 @@ private options={
   },
   headers:{
     accept:'application/json',
-    Authorizatiion:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNGY3NzZkODhkYTc0MDgxZDg4NDk5NDQwMDYwY2Q5ZSIsIm5iZiI6MTcyODkwNzc2MC40NzM5Nywic3ViIjoiNjcwZDAzMjQwYjgwMDUzN2Q3NWM2YmM2Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.T1gvzk2efvAvwKiqrfs1krvJCjbRWSf-SId7aQHk1E0'
+    Authorizatiion:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNGY3NzZkODhkYTc0MDgxZDg4NDk5NDQwMDYwY2Q5ZSIsIm5iZiI6MTcyODkwNzc2MC40NzM5Nywic3ViIjoiNjcwZDAzMjQwYjgwMDUzN2Q3NWM2YmM2Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.T1gvzk2efvAvwKiqrfs1krvJCjbRWSf-SId7aQHk1E0',
+
+    
   }
 }
 

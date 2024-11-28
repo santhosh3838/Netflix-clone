@@ -30,6 +30,7 @@ export class BrowseComponent implements OnInit {
   }
 
   signout() {
+    this.auth.signOut();
     sessionStorage.removeItem("loggedIUser")
     this.auth.signOut();
   }

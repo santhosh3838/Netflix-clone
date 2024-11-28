@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://api.themoviedb.org",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+  
