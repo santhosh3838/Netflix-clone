@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable} from '@angular/core';
- 
+
 @Injectable({
   providedIn: 'root'
 })
-  
+
 export class MovieService {
 http=inject(HttpClient)
- 
+
 private options={
   params:{
     include_adult:'false',
@@ -18,9 +18,7 @@ private options={
   },
   headers:{
     accept:'application/json',
-    Authorizatiion:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNGY3NzZkODhkYTc0MDgxZDg4NDk5NDQwMDYwY2Q5ZSIsIm5iZiI6MTcyODkwNzc2MC40NzM5Nywic3ViIjoiNjcwZDAzMjQwYjgwMDUzN2Q3NWM2YmM2Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.T1gvzk2efvAvwKiqrfs1krvJCjbRWSf-SId7aQHk1E0',
-
-    
+    Authorization:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZGU4MmFiZjg4Mjc0OTMwZWFhNTA2NThhZjBiOTYwNCIsIm5iZiI6MTczMjc5MDM1Ny4xMzYzODcsInN1YiI6IjYwYzhkZDQ0Y2E4MzU0MDAyOTk1OTYzNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OR8e2S_bZmNgxw9ALkiT490xSxN3RzEnAlERhri_mp4',
   }
 }
 
